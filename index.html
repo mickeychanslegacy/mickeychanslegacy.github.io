@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Mickey Chan's Legacy</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
 
-    <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+    <nav class="bg-black text-white sticky top-0 z-50 shadow-md">
         <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <a href="#" onclick="switchTab('home')" class="text-xl font-bold tracking-wide hover:text-blue-400 transition">PORTFOLIO</a>
+            <a href="#" onclick="switchTab('home')" class="text-xl font-bold tracking-wide hover:text-blue-400 transition">MICKEY CHAN'S LEGACY</a>
             <div class="flex gap-1 sm:gap-2">
-                <button onclick="switchTab('cv')" id="btn-cv" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition">CV</button>
-                <button onclick="switchTab('tools')" id="btn-tools" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition">Engineering Tools</button>
-                <button onclick="switchTab('projects')" id="btn-projects" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition">Projects</button>
+                <button onclick="switchTab('cv')" id="btn-cv" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-900 transition">CV</button>
+                <button onclick="switchTab('tools')" id="btn-tools" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-900 transition">Engineering Tools</button>
+                <button onclick="switchTab('projects')" id="btn-projects" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-900 transition">Projects</button>
             </div>
         </div>
     </nav>
@@ -25,7 +25,7 @@
         <section id="page-home" class="tab-content hidden space-y-8 animate-fade-in">
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center sm:text-left sm:flex items-center justify-between gap-8">
                 <div class="space-y-4">
-                    <h1 class="text-4xl font-extrabold text-slate-900">Welcome to My Portfolio</h1>
+                    <h1 class="text-4xl font-extrabold text-slate-900">Welcome to Mickey Chan's Legacy</h1>
                     <p class="text-lg text-gray-600 max-w-2xl">
                         I am a professional specializing in engineering solutions, technical data analysis, and project management. Explore my background, technical toolkit, and key project deliveries below.
                     </p>
@@ -51,163 +51,4 @@
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-6">
                 <h3 class="text-xl font-bold text-slate-800 border-l-4 border-blue-600 pl-3">Professional Experience</h3>
                 
-                <div class="relative border-l border-gray-200 pl-6 ml-2 space-y-8">
-                    <div class="relative">
-                        <div class="absolute -left-[31px] top-1 bg-blue-600 h-4 w-4 rounded-full border-4 border-white shadow-sm"></div>
-                        <div class="flex flex-col sm:flex-row sm:justify-between mb-1">
-                            <h4 class="font-bold text-slate-900">Project / Civil Engineer</h4>
-                            <span class="text-sm text-gray-500 font-medium">2024 - Present</span>
-                        </div>
-                        <p class="text-sm font-medium text-blue-600 mb-2">Engineering & Construction Industry</p>
-                        <ul class="list-disc pl-5 text-gray-600 text-sm space-y-1.5">
-                            <li>Managed structural specifications, alignments, and spatial coordination for site layouts.</li>
-                            <li>Oversaw pre-handover inspections, drafted comprehensive defect lists, and successfully managed the Defects Liability Period (DLP) transitions.</li>
-                            <li>Coordinated with professional contacts and stakeholders to ensure strict adherence to engineering quality standards.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
-                <h3 class="text-xl font-bold text-slate-800 border-l-4 border-blue-600 pl-3">Education</h3>
-                <div class="flex flex-col sm:flex-row sm:justify-between">
-                    <div>
-                        <h4 class="font-bold text-slate-900">Bachelor of Engineering (BEng)</h4>
-                        <p class="text-sm text-gray-600">Hong Kong University of Science and Technology (HKUST)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="page-tools" class="tab-content hidden space-y-8">
-            <div class="border-b border-gray-200 pb-4">
-                <h2 class="text-3xl font-bold text-slate-900"><i class="fa-solid fa-screwdriver-wrench mr-3 text-blue-600"></i>Engineering Tools</h2>
-                <p class="text-gray-500 mt-1">Software platforms, languages, and technical applications I utilize daily.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
-                    <div class="text-blue-600 text-2xl"><i class="fa-solid fa-compass-drafting"></i></div>
-                    <h3 class="font-bold text-lg text-slate-900">3D Modeling & CAD</h3>
-                    <p class="text-sm text-gray-600">Experienced in developing technical layouts, executing path copies, extruding geometric curved profiles, and coordinating spatial data models.</p>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-2.5 py-1 rounded">AutoCAD</span>
-                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-2.5 py-1 rounded">Revit</span>
-                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-2.5 py-1 rounded">SketchUp Pro</span>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
-                    <div class="text-emerald-600 text-2xl"><i class="fa-solid fa-table"></i></div>
-                    <h3 class="font-bold text-lg text-slate-900">Data & Analytics</h3>
-                    <p class="text-sm text-gray-600">Advanced use of spreadsheets for engineering data tracking, metric cross-referencing, conditional computations, and structural optimization analysis.</p>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-2.5 py-1 rounded">Microsoft Excel</span>
-                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-2.5 py-1 rounded">Data Modeling</span>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
-                    <div class="text-purple-600 text-2xl"><i class="fa-solid fa-code"></i></div>
-                    <h3 class="font-bold text-lg text-slate-900">Programming & Automation</h3>
-                    <p class="text-sm text-gray-600">Leveraging foundational coding methodologies to build internal automations, manage workflows, and structure technical reports cleanly.</p>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-2.5 py-1 rounded">HTML5 / CSS3</span>
-                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-2.5 py-1 rounded">Git / GitHub</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="page-projects" class="tab-content hidden space-y-8">
-            <div class="border-b border-gray-200 pb-4">
-                <h2 class="text-3xl font-bold text-slate-900"><i class="fa-solid fa-diagram-project mr-3 text-blue-600"></i>Key Projects</h2>
-                <p class="text-gray-500 mt-1">A curated archive of site deliveries and technical infrastructure execution.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-slate-800 p-8 flex items-center justify-center text-white text-4xl">
-                        <i class="fa-solid fa-city"></i>
-                    </div>
-                    <div class="p-6 space-y-3 flex-grow flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <h3 class="font-bold text-xl text-slate-900">Infrastructure Handover & DLP Phase</h3>
-                            <p class="text-sm text-gray-600">
-                                Directed comprehensive pre-handover architectural inspections for site packages. Formulated strategic structural defect registers, managed rectification timelines, and governed the successful initiation of the Defects Liability Period.
-                            </p>
-                        </div>
-                        <div class="flex flex-wrap gap-1.5 pt-4 border-t border-gray-100">
-                            <span class="text-xs font-medium px-2 py-0.5 bg-slate-100 rounded text-slate-700">Project Management</span>
-                            <span class="text-xs font-medium px-2 py-0.5 bg-slate-100 rounded text-slate-700">QA/QC</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-slate-700 p-8 flex items-center justify-center text-white text-4xl">
-                        <i class="fa-solid fa-calculator"></i>
-                    </div>
-                    <div class="p-6 space-y-3 flex-grow flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <h3 class="font-bold text-xl text-slate-900">Engineering Specification Alignment</h3>
-                            <p class="text-sm text-gray-600">
-                                Executed detailed physical coordination assessments against technical drawing specifications. Managed critical tolerances including specific alignment offsets for structural elements, guardrails, and footway surface finishes.
-                            </p>
-                        </div>
-                        <div class="flex flex-wrap gap-1.5 pt-4 border-t border-gray-100">
-                            <span class="text-xs font-medium px-2 py-0.5 bg-slate-100 rounded text-slate-700">AutoCAD</span>
-                            <span class="text-xs font-medium px-2 py-0.5 bg-slate-100 rounded text-slate-700">Site Planning</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-500">
-        <div class="max-w-5xl mx-auto px-4">
-            &copy; 2026 Portfolio. Built with Tailwind CSS on GitHub Pages.
-        </div>
-    </footer>
-
-    <script>
-        function switchTab(tabId) {
-            // Hide all tab sections
-            const contents = document.querySelectorAll('.tab-content');
-            contents.forEach(content => content.classList.add('hidden'));
-
-            // Remove active style from all nav buttons
-            const buttons = document.querySelectorAll('.nav-btn');
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700');
-                btn.classList.add('text-sm', 'hover:bg-slate-800', 'text-white');
-            });
-
-            // Show target section
-            document.getElementById(`page-${tabId}`).classList.remove('hidden');
-
-            // Apply active styles to selected button if it's not the 'home' link
-            const activeBtn = document.getElementById(`btn-${tabId}`);
-            if (activeBtn) {
-                activeBtn.classList.remove('hover:bg-slate-800');
-                activeBtn.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
-            }
-
-            // Save active view in URL hash for quick link persistence
-            window.location.hash = tabId;
-        }
-
-        // Initialize page based on URL hash or default to home
-        window.addEventListener('DOMContentLoaded', () => {
-            const currentHash = window.location.hash.replace('#', '');
-            if (['home', 'cv', 'tools', 'projects'].includes(currentHash)) {
-                switchTab(currentHash);
-            } else {
-                switchTab('home');
-            }
-        });
-    </script>
-</body>
-</html>
+                <div class="relative border-l border-gray-200 pl-6 ml
