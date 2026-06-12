@@ -41,48 +41,46 @@
         </div>
     </header>
 
-    <section class="pt-32 pb-20 bg-gradient-to-b from-slate-950 to-slate-900 text-center px-4">
-        <div class="max-w-3xl mx-auto">
-            <div class="relative w-40 h-40 mx-auto mb-6 rounded-full border-4 border-amber-500/30 overflow-hidden bg-slate-800 flex items-center justify-center group shadow-xl shadow-slate-950/50">
-                <img src="profile.jpg" alt="Mickey Chan" class="w-full h-full object-cover onerror-fallback" onerror="this.style.display='none'; document.getElementById('avatar-fallback').classList.remove('hidden');">
+    <section class="pt-16 bg-slate-950">
+        <div class="w-full max-w-6xl mx-auto px-0 md:px-4 pt-4">
+            <div class="relative w-full aspect-[21/9] md:rounded-xl overflow-hidden border-b md:border border-slate-800 shadow-2xl shadow-black/80 group">
+                <img src="jojo-banner.jpg" alt="Mickey Chan Legacy Banner" class="w-full h-full object-cover">
                 
-                <div id="avatar-fallback" class="hidden text-slate-500 flex flex-col items-center">
-                    <i class="fa-solid fa-user text-5xl mb-1"></i>
-                    <span class="text-[10px] uppercase tracking-widest text-slate-400">Your Photo</span>
-                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
             </div>
+        </div>
+    </section>
 
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
-                Mickey Chan
-            </h1>
-            <p class="text-lg text-amber-500 font-medium tracking-widest uppercase mb-6 text-sm">
+    <section class="bg-gradient-to-b from-slate-950 to-slate-900 text-center py-8 px-4">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-amber-500 font-medium tracking-widest uppercase text-sm mb-2">
                 Engineering & Development
             </p>
-            <p class="text-slate-400 max-w-xl mx-auto leading-relaxed">
+            <p class="text-slate-400 max-w-xl mx-auto text-sm leading-relaxed">
                 Welcome to my personal archive. This space serves as a dynamic log of my professional journey, custom engineering utilities, and interactive side projects.
             </p>
         </div>
     </section>
 
-    <main class="max-w-5xl mx-auto px-4 py-12 space-y-32">
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-24">
 
         <section id="cv" class="scroll-mt-24">
-            <div class="flex items-center space-x-4 mb-8 border-b border-slate-800 pb-4">
+            <div class="flex items-center space-x-4 mb-6 border-b border-slate-800 pb-4">
                 <div class="p-2 bg-amber-500/10 text-amber-500 rounded-lg">
-                    <i class="fa-solid fa-briefcase text-xl"></i>
+                    <i class="fa-solid fa-briefcase text-lg"></i>
                 </div>
-                <h2 class="text-2xl font-bold tracking-wide text-white">Curriculum Vitae</h2>
+                <h2 class="text-xl font-bold tracking-wide text-white">Curriculum Vitae</h2>
             </div>
             
             <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-6 md:p-8 backdrop-blur-sm space-y-6">
-                <p class="text-slate-400 leading-relaxed">
+                <p class="text-slate-400 leading-relaxed text-sm">
                     A dedicated professional blending structural precision with technical execution. Details regarding academic background, core industry competencies, and career milestones go here.
                 </p>
                 <div class="border-l-2 border-slate-700 pl-4 space-y-4">
                     <div class="relative">
                         <div class="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-amber-500"></div>
-                        <h4 class="text-white font-semibold">Professional Profile</h4>
-                        <p class="text-sm text-slate-500">Present</p>
+                        <h4 class="text-white font-semibold text-sm">Professional Profile</h4>
+                        <p class="text-xs text-slate-500">Present</p>
                     </div>
                 </div>
             </div>
@@ -90,16 +88,16 @@
 
 
         <section id="tools" class="scroll-mt-24">
-            <div class="flex items-center space-x-4 mb-8 border-b border-slate-800 pb-4">
+            <div class="flex items-center space-x-4 mb-6 border-b border-slate-800 pb-4">
                 <div class="p-2 bg-amber-500/10 text-amber-500 rounded-lg">
-                    <i class="fa-solid fa-compass-drafting text-xl"></i>
+                    <i class="fa-solid fa-compass-drafting text-lg"></i>
                 </div>
-                <h2 class="text-2xl font-bold tracking-wide text-white">Engineering's Tools</h2>
+                <h2 class="text-xl font-bold tracking-wide text-white">Engineering's Tools</h2>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
-                    <h3 class="text-lg font-semibold text-white mb-2">Calculation & Analysis</h3>
+                    <h3 class="text-base font-semibold text-white mb-2">Calculation & Analysis</h3>
                     <p class="text-sm text-slate-400 leading-relaxed">
                         Custom automation scripts, data loggers, and structural estimation sheets designed to optimize project workflows and accuracy.
                     </p>
@@ -112,23 +110,23 @@
 
 
         <section id="projects" class="scroll-mt-24">
-            <div class="flex items-center space-x-4 mb-8 border-b border-slate-800 pb-4">
+            <div class="flex items-center space-x-4 mb-6 border-b border-slate-800 pb-4">
                 <div class="p-2 bg-amber-500/10 text-amber-500 rounded-lg">
-                    <i class="fa-solid fa-gamepad text-xl"></i>
+                    <i class="fa-solid fa-gamepad text-lg"></i>
                 </div>
-                <h2 class="text-2xl font-bold tracking-wide text-white">My Little Projects</h2>
+                <h2 class="text-xl font-bold tracking-wide text-white">My Little Projects</h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden hover:border-amber-500/50 transition group flex flex-col justify-between h-full shadow-lg">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
-                            <span class="text-xs font-semibold tracking-widest text-amber-500 bg-amber-500/10 px-2.5 py-1 rounded-full uppercase">
+                            <span class="text-[10px] font-semibold tracking-widest text-amber-500 bg-amber-500/10 px-2.5 py-1 rounded-full uppercase">
                                 Browser Game
                             </span>
-                            <i class="fa-solid fa-taxi text-slate-600 text-xl group-hover:text-amber-500 transition"></i>
+                            <i class="fa-solid fa-taxi text-slate-600 text-lg group-hover:text-amber-500 transition"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition">
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition">
                             Crazy Taxi Hong Kong
                         </h3>
                         <p class="text-sm text-slate-400 leading-relaxed">
@@ -137,19 +135,19 @@
                     </div>
                     
                     <div class="p-6 pt-0">
-                        <a href="https://mickeychanslegacy.github.io/crazytaxihk/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full bg-slate-900 border border-slate-700 hover:border-amber-500 text-sm font-medium text-white py-2.5 px-4 rounded-lg transition group-hover:bg-amber-500 group-hover:text-slate-950">
+                        <a href="https://mickeychanslegacy.github.io/crazytaxihk/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full bg-slate-900 border border-slate-700 hover:border-amber-500 text-sm font-medium text-white py-2 px-4 rounded-lg transition group-hover:bg-amber-500 group-hover:text-slate-950">
                             Launch Game 
                             <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="bg-slate-950/20 border border-slate-800 border-dashed rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[250px]">
-                    <i class="fa-solid fa-seedling text-slate-700 text-xl mb-2"></i>
+                <div class="bg-slate-950/20 border border-slate-800 border-dashed rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[220px]">
+                    <i class="fa-solid fa-seedling text-slate-700 text-lg mb-2"></i>
                     <span class="text-xs text-slate-600 uppercase tracking-widest">Next Idea Loading</span>
                 </div>
-                <div class="bg-slate-950/20 border border-slate-800 border-dashed rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[250px]">
-                    <i class="fa-solid fa-seedling text-slate-700 text-xl mb-2"></i>
+                <div class="bg-slate-950/20 border border-slate-800 border-dashed rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[220px]">
+                    <i class="fa-solid fa-seedling text-slate-700 text-lg mb-2"></i>
                     <span class="text-xs text-slate-600 uppercase tracking-widest">Next Idea Loading</span>
                 </div>
             </div>
@@ -161,14 +159,5 @@
         <p>&copy; 2026 Mickey Chan's Legacy. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const img = document.querySelector('.onerror-fallback');
-            if (img && (!img.getAttribute('src') || img.getAttribute('src') === 'profile.jpg')) {
-                img.style.display = 'none';
-                document.getElementById('avatar-fallback').classList.remove('hidden');
-            }
-        });
-    </script>
 </body>
 </html>
