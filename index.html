@@ -4,51 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mickey Chan's Legacy</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Smooth scrolling and custom dark scrollbar */
+        html {
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
 
-    <nav class="bg-black text-white sticky top-0 z-50 shadow-md">
-        <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <a href="#" onclick="switchTab('home')" class="text-xl font-bold tracking-wide hover:text-blue-400 transition">MICKEY CHAN'S LEGACY</a>
-            <div class="flex gap-1 sm:gap-2">
-                <button onclick="switchTab('cv')" id="btn-cv" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-900 transition">CV</button>
-                <button onclick="switchTab('tools')" id="btn-tools" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-900 transition">Engineering Tools</button>
-                <button onclick="switchTab('projects')" id="btn-projects" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-900 transition">Projects</button>
-            </div>
+    <header class="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-amber-500 hover:text-amber-400 transition">
+                MICKEY CHAN'S LEGACY
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#cv" class="hover:text-amber-400 transition text-slate-300">CV</a>
+                <a href="#tools" class="hover:text-amber-400 transition text-slate-300">Engineering Tools</a>
+                <a href="#projects" class="hover:text-amber-400 transition text-slate-300">My Little Projects</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-10 flex-grow w-full">
-
-        <section id="page-home" class="tab-content hidden space-y-8 animate-fade-in">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center sm:text-left sm:flex items-center justify-between gap-8">
-                <div class="space-y-4">
-                    <h1 class="text-4xl font-extrabold text-slate-900">Welcome to Mickey Chan's Legacy</h1>
-                    <p class="text-lg text-gray-600 max-w-2xl">
-                        I am a professional specializing in engineering solutions, technical data analysis, and project management. Explore my background, technical toolkit, and key project deliveries below.
-                    </p>
-                    <div class="pt-2 flex flex-wrap justify-center sm:justify-start gap-3">
-                        <button onclick="switchTab('cv')" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-medium shadow-sm transition">View CV</button>
-                        <button onclick="switchTab('projects')" class="bg-slate-800 hover:bg-slate-900 text-white px-5 py-2.5 rounded-xl font-medium shadow-sm transition">Explore Projects</button>
-                    </div>
+    <section class="pt-32 pb-20 bg-gradient-to-b from-slate-950 to-slate-900 text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <div class="relative w-40 h-40 mx-auto mb-6 rounded-full border-4 border-amber-500/30 overflow-hidden bg-slate-800 flex items-center justify-center group shadow-xl shadow-slate-950/50">
+                <img src="profile.jpg" alt="Mickey Chan" class="w-full h-full object-cover onerror-fallback" onerror="this.style.display='none'; document.getElementById('avatar-fallback').classList.remove('hidden');">
+                
+                <div id="avatar-fallback" class="hidden text-slate-500 flex flex-col items-center">
+                    <i class="fa-solid fa-user text-5xl mb-1"></i>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-400">Your Photo</span>
                 </div>
-                <div class="hidden md:block text-slate-200 text-9xl">
-                    <i class="fa-solid fa-helmet-safety"></i>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
+                Mickey Chan
+            </h1>
+            <p class="text-lg text-amber-500 font-medium tracking-widest uppercase mb-6 text-sm">
+                Engineering & Development
+            </p>
+            <p class="text-slate-400 max-w-xl mx-auto leading-relaxed">
+                Welcome to my personal archive. This space serves as a dynamic log of my professional journey, custom engineering utilities, and interactive side projects.
+            </p>
+        </div>
+    </section>
+
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-32">
+
+        <section id="cv" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8 border-b border-slate-800 pb-4">
+                <div class="p-2 bg-amber-500/10 text-amber-500 rounded-lg">
+                    <i class="fa-solid fa-briefcase text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold tracking-wide text-white">Curriculum Vitae</h2>
+            </div>
+            
+            <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-6 md:p-8 backdrop-blur-sm space-y-6">
+                <p class="text-slate-400 leading-relaxed">
+                    A dedicated professional blending structural precision with technical execution. Details regarding academic background, core industry competencies, and career milestones go here.
+                </p>
+                <div class="border-l-2 border-slate-700 pl-4 space-y-4">
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-amber-500"></div>
+                        <h4 class="text-white font-semibold">Professional Profile</h4>
+                        <p class="text-sm text-slate-500">Present</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="page-cv" class="tab-content hidden space-y-8">
-            <div class="flex justify-between items-center border-b border-gray-200 pb-4">
-                <h2 class="text-3xl font-bold text-slate-900"><i class="fa-solid fa-file-invoice mr-3 text-blue-600"></i>Curriculum Vitae</h2>
-                <a href="#" class="bg-blue-50 text-blue-600 hover:bg-blue-100 px-4 py-2 rounded-lg text-sm font-semibold transition">
-                    <i class="fa-solid fa-download mr-2"></i>Download PDF
-                </a>
+
+        <section id="tools" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8 border-b border-slate-800 pb-4">
+                <div class="p-2 bg-amber-500/10 text-amber-500 rounded-lg">
+                    <i class="fa-solid fa-compass-drafting text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold tracking-wide text-white">Engineering's Tools</h2>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-6">
-                <h3 class="text-xl font-bold text-slate-800 border-l-4 border-blue-600 pl-3">Professional Experience</h3>
-                
-                <div class="relative border-l border-gray-200 pl-6 ml
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition">
+                    <h3 class="text-lg font-semibold text-white mb-2">Calculation & Analysis</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Custom automation scripts, data loggers, and structural estimation sheets designed to optimize project workflows and accuracy.
+                    </p>
+                </div>
+                <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition flex items-center justify-center border-dashed">
+                    <span class="text-sm text-slate-500 tracking-wider"><i class="fa-solid fa-plus mr-2"></i> Add New Tool</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8 border-b border-slate-800 pb-4">
+                <div class="p-2 bg-amber-500/10 text-amber-500 rounded-lg">
+                    <i class="fa-solid fa-gamepad text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold tracking-wide text-white">My Little Projects</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden hover:border-amber-500/50 transition group flex flex-col justify-between h-full shadow-lg">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold tracking-widest text-amber-500 bg-amber-500/10 px-2.5 py-1 rounded-full uppercase">
+                                Browser Game
+                            </span>
+                            <i class="fa-solid fa-taxi text-slate-600 text-xl group-hover:text-amber-500 transition"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition">
+                            Crazy Taxi Hong Kong
+                        </h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            An interactive web game paying homage to the classic arcade experience, set right on the fast-paced streets of Hong Kong.
+                        </p>
+                    </div>
+                    
+                    <div class="p-6 pt-0">
+                        <a href="https://mickeychanslegacy.github.io/crazytaxihk/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full bg-slate-900 border border-slate-700 hover:border-amber-500 text-sm font-medium text-white py-2.5 px-4 rounded-lg transition group-hover:bg-amber-500 group-hover:text-slate-950">
+                            Launch Game 
+                            <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950/20 border border-slate-800 border-dashed rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[250px]">
+                    <i class="fa-solid fa-seedling text-slate-700 text-xl mb-2"></i>
+                    <span class="text-xs text-slate-600 uppercase tracking-widest">Next Idea Loading</span>
+                </div>
+                <div class="bg-slate-950/20 border border-slate-800 border-dashed rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[250px]">
+                    <i class="fa-solid fa-seedling text-slate-700 text-xl mb-2"></i>
+                    <span class="text-xs text-slate-600 uppercase tracking-widest">Next Idea Loading</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950 text-center py-8 px-4 text-xs text-slate-500 tracking-wide mt-20">
+        <p>&copy; 2026 Mickey Chan's Legacy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const img = document.querySelector('.onerror-fallback');
+            if (img && (!img.getAttribute('src') || img.getAttribute('src') === 'profile.jpg')) {
+                img.style.display = 'none';
+                document.getElementById('avatar-fallback').classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
